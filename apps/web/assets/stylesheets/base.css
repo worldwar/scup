@@ -1,0 +1,15 @@
+.font-chalkboard {
+	font-family: Chalkboard;
+}
+
+input.font-rem-2 {
+	font-size: 2rem;
+}
+
+textarea.font-rem-2 {
+	font-size: 2rem;
+}
+
+code.font-rem-2 {
+	font-size: 2rem;
+}

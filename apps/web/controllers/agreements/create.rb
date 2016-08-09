@@ -6,7 +6,9 @@ module Web::Controllers::Agreements
 
     def call(params)
       @agreement = AgreementRepository.create(Agreement.new(params[:agreement]))
-      redirect_to '/agreements'
+      # puts "agreement:", @agreement
+
+      redirect_to "/agreements/greeting/#{@agreement.id}"
     end
   end
 end

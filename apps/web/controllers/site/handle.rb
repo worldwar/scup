@@ -3,7 +3,6 @@ module Web::Controllers::Site
     include Web::Action
 
     def call(params)
-
     	agreements = AgreementRepository.agreements_by_url(params[:url]).all()
 
     	agreement = agreements.detect do |agreement|
