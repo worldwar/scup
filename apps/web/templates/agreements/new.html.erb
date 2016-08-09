@@ -1,0 +1,25 @@
+<h2>Add Agreement</h2>
+
+<%=
+  form_for :agreement, '/agreements' do
+    div class: 'input' do
+      label :url
+      text_field :url
+    end
+
+    div class: 'input' do
+      label :http_method
+      text_field :http_method
+    end
+
+    div class: 'input' do
+      label :response
+      text_field :response
+    end
+
+    div class: 'controls' do
+      submit 'Create Agreement'
+    end  	
+  end
+%>
+

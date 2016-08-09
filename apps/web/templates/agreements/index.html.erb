@@ -1,0 +1,11 @@
+<% if agreements.any? %>
+  <% agreements.each do |agreement| %>
+    <div class="agreement">
+      <h2><%= agreement.url %></h2>
+      <p><%= agreement.http_method %></p>
+      <p><%= agreement.response %></p>
+    </div>
+  <% end %>
+<% else %>
+  <p class="placeholder">There are no agreements yet.</p>
+<% end %>
