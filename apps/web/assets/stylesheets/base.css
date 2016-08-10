@@ -13,3 +13,33 @@ textarea.font-rem-2 {
 code.font-rem-2 {
 	font-size: 2rem;
 }
+
+.nav-logo {
+	height: 64px;
+}
+
+.padding-left-zero {
+    padding-left: 0px;
+}
+
+input[type=text]:focus:not([readonly])+label {
+	color: #9ccc65;
+}
+
+input[type=text]:focus:not([readonly]) {
+	border-bottom: 1px solid #9ccc65;
+	box-shadow: 0 1px 0 0 #9ccc65;
+}
+
+textarea.materialize-textarea:focus:not([readonly])+label  {
+	color: #9ccc65;
+}
+
+textarea.materialize-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid #9ccc65;
+	box-shadow: 0 1px 0 0 #9ccc65;
+}
+
+.dropdown-content li>span {
+	color: #ef5350;
+}
