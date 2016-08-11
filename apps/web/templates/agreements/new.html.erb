@@ -17,7 +17,7 @@
   	div class: 'row' do
       div class: 'col s3' do
         div class: 'input input-field' do
-          values = Hash['GET' => 'GET', 'POST' => 'POST', 'PUT' => 'PUT', 'PATCH' => 'PATCH', 'TRACE' => 'TRACE']
+          values = Hash['GET' => 'GET', 'POST' => 'POST', 'PUT' => 'PUT', 'PATCH' => 'PATCH', 'DELETE' => 'DELETE', 'TRACE' => 'TRACE']
           select :http_method, values, class: 'red-text text-lighten-1 font-rem-2'
           label :http_method
         end
@@ -36,7 +36,7 @@
   	div class: 'row' do
       div class: 'col s12' do
         div class: 'controls' do
-          submit 'Create Agreement', class: 'btn waves-effect waves-light light-green darken-1'
+          submit 'Create Agreement', class: 'btn btn-large waves-effect waves-light light-green darken-1'
         end
       end
     end
